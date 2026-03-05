@@ -5,14 +5,13 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: N8N_ENCRYPTION_KEY
-        value: your-random-32-character-encryption-key-here
+        value: 1234567890123456789012345678901a
       - key: N8N_HOST
-        value: render.onrender.com
+        value: n8n-render-h4tx.onrender.com
       - key: N8N_PROTOCOL
         value: https
       - key: WEBHOOK_URL
-        value: https://YOUR_SERVICE_NAME.onrender.com/
+        value: https://n8n-render-h4tx.onrender.com/
     ports:
       - port: 5678
         protocol: HTTP
-    startCommand: node /data/dist/bin/n8n start
